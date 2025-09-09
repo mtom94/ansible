@@ -26,4 +26,9 @@
         state: started
         enabled: yes
 
+    - name: Restart Nginx to apply changes
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+
 
