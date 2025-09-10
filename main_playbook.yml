@@ -1,6 +1,6 @@
 ---
 - name: Deploy Nginx with demo-role
-  hosts: webservers
+  hosts: web
   become: true
   roles:
     - demo-role
